@@ -41,10 +41,16 @@ main {
 }
 
 .smallBanner {
-    background-image: linear-gradient(to right, var(--bs-dark), var(--bs-dark), gray, var(--bs-light), white);
+    background-image: linear-gradient(to right, var(--bs-dark), var(--bs-dark), gray, var(--bs-light), white, white);
     padding: 0.3em;
     color: var(--bs-light);
     border-radius: 10px;
+}
+
+.card {
+    width: 18rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
 }
 
 .deutsch {
@@ -170,7 +176,7 @@ main {
 .bookish h1 {
     margin: 1.5rem 0;
     text-align: center;
-    font-family: sans-serif;
+    font-family: Karla, sans-serif;
     font-variant: small-caps;
     font-size: 1.5rem;
 }
