@@ -41,7 +41,7 @@ main {
 }
 
 .smallBanner {
-    background-image: linear-gradient(to right, var(--bs-dark), var(--bs-dark), gray, var(--bs-light), white, white);
+    background-image: linear-gradient(to right, var(--bs-dark), var(--bs-dark), var(--bs-secondary) ,var(--bs-light), white);
     padding: 0.3em;
     color: var(--bs-light);
     border-radius: 10px;
@@ -205,12 +205,23 @@ main {
 
 /* #region Custom Media Queries */
 
-@media screen and (max-width: 359px) {
+@media screen and (width < 360px) {
     #intro {
         display: none;
     }
 }
 
+@media screen and (440 <= width < 600px) {
+    .smallBanner {
+        background-image: linear-gradient(to right, var(--bs-dark), var(--bs-secondary), white);
+    }
+}
+
+@media screen and (width < 440px) {
+    .smallBanner {
+        background-image: linear-gradient(to right, var(--bs-dark), gray);
+    }
+}
 /* #endregion */
 
 /* #region Classmates */
@@ -292,36 +303,30 @@ main {
     background-image: url('/images/Andrew_Cocroft.jpg');
     background-size: cover;
     background-position: top;
-    
 }
 .colleagues ul li:nth-child(2) {
     background-image: url('/images/Cody_Slivinski.jpg');
     background-size: cover;
     background-position: center;
-
 }
 .colleagues ul li:nth-child(3) {
     background-image: url('/images/Darron_Werntz.jpg');
     background-size: cover;
     background-position: top;
-
 }
 .colleagues ul li:nth-child(4) {
     background-image: url('/images/Jace_Cockrell.png');
     background-size: cover;
     background-position: top;
-
 }
 .colleagues ul li:nth-child(5) {
     background-image: url('/images/Kyle_Gough.jpg');
     background-size: cover;
     background-position: top;
-
 }
 .colleagues ul li:nth-child(6) {
     background-image: url('/images/Nicholas_Davolt.jpg');
     background-size: cover;
-
 }
 
 .colleagues ul:hover li {
