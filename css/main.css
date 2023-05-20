@@ -40,6 +40,17 @@ main {
     overflow: hidden;
 }
 
+.cover {
+    background-color: var(--bs-warning);
+    color: var(--bs-dark);
+    padding: 0 3em;
+    display: inline;
+    z-index: 5;
+    position: relative;
+    top: -0.2em;
+    left: -14.5em;
+}
+
 .smallBanner {
     background-image: linear-gradient(to right, var(--bs-dark), var(--bs-dark), var(--bs-secondary) ,var(--bs-light), white);
     padding: 0.3em;
