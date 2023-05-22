@@ -17,6 +17,7 @@ body {
     font-size: 20px;
     background-color: var(--dark);
     color: var(--phosphor);
+    padding: 2rem 0;
 }
 
 h1, h2, h3 {
@@ -29,12 +30,12 @@ article p {
     max-width: 36em;
 }
 
-a {
+p a {
     text-decoration: none;
     color:var(--amber);
 }
 
-a:hover {
+p a:hover {
     color: var(--dark);
     background-color: var(--amber);
     font-weight: 600;
@@ -84,7 +85,7 @@ a:hover {
     }
 }
 
-.pageTitle {
+.screenGlow {
     color: var(--phosphor);
     text-shadow: 1px 1px 5px var(--shadow);
 }
