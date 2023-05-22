@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Projects | Ritterhaus</title>
+        <title>Archaelogical Adventure!</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon-48x48.png" />
         <link
             rel="stylesheet"
@@ -19,7 +19,7 @@
     <body class="container position-relative" onload="setTitle()">
         <header>
             <div class="row">
-                <div class="pageTitle col-auto m-auto"></div>
+                <div id="pageTitle" class="screenGlow col-auto m-auto"></div>
             </div>
         </header>
         <hr />
@@ -76,7 +76,9 @@
         <!-- #endregion -->
 
         <!-- #region Footer -->
-        <footer></footer>
+        <footer>
+            <a href="http://ritterhaus.net/projects.html"><i class="fa-solid fa-2xl fa-chess-knight screenGlow"></i></a>
+        </footer>
         <!-- #endregion -->
 
         <!-- #region Scripts -->
@@ -92,7 +94,9 @@
             );
         </script>
         <script src="js/adventure.js"></script>
-        <script>typeWriter();</script>
+        <script>
+            typeWriter();
+        </script>
         <!-- #endregion -->
     </body>
 </html>

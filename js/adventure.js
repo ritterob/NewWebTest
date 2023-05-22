@@ -4,7 +4,7 @@ window.addEventListener('resize', function (event) {
 
 function setTitle() {
     const width = window.innerWidth;
-    const title = document.querySelector('.pageTitle');
+    const title = document.querySelector('#pageTitle');
     if (width < 545) {
         title.innerHTML = '<p>An Archaeological</p><h1>Adventure!</h1>';
     } else if (width < 1200) {
