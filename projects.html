@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
-        <!-- #region header -->
+        <!-- #region Header -->
         <header class="container-md">
             <!-- #region Page Heading -->
             <div class="row align-items-end justify-content-end">
@@ -96,48 +96,73 @@
                 </div>
             </div>
             <h2 class="smallBanner">Works In Progress</h2>
-            <div class="row mb-3 px-3 justify-content-around">
-                <div class="card bg-info text-light">
-                    <div class="card-body flex-column d-flex">
-                        <h5 class="card-title">Archaelogical Adventure!</h5>
-                        <p class="card-text">
-                            A dungeon crawler in the style of
-                            <a href="https://www.myabandonware.com/game/braminar-2g3/play-2g3" target="_blank"
-                                class="text-dark"><strong>Braminar</strong></a
-                            >.
-                        </p>
-                        <a href="/adventure.html" target="_blank" class="btn btn-secondary align-self-end mt-auto"
-                            >Archaelogical Adventure</a
-                        >
-                    </div>
+            <div class="row justify-content-center p-2">
+                <div id="projectInfo" class="col-lg-6 col-md-7 col-sm-9 py-3">
+                    <h3>Project Details</h3>
+                    <hr />
+                    <div id="detailsBox">Hover over an image for details.</div>
                 </div>
-                <div class="card bg-light text-secondary align-content-between">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">StoreFront</h5>
-                        <p class="card-text">An online store app.</p>
-                        <a href="#" class="btn btn-secondary align-self-end mt-auto disabled">Coming Soon</a>
-                    </div>
+                <div id="animationColumn" class="col-lg-4 col-md-2 col-sm-1 py-3 d-flex flex-column">
+                    <div id="game" class="trace"></div>
+                    <div id="store" class="trace"></div>
+                    <div id="api" class="trace"></div>
+                    <div id="react" class="trace"></div>
+                    <div id="schedule" class="trace"></div>
                 </div>
-                <div class="card bg-dark text-secondary">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">ToDo API</h5>
-                        <p class="card-text">A dungeon crawler in the style of Braminar.</p>
-                        <a href="#" class="btn btn-secondary align-self-end mt-auto disabled">Coming Soon</a>
-                    </div>
-                </div>
-                <div class="card bg-light text-secondary">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">React ToDo</h5>
-                        <p class="card-text">A dungeon crawler in the style of Braminar.</p>
-                        <a href="#" class="btn btn-secondary align-self-end mt-auto disabled">Coming Soon</a>
-                    </div>
-                </div>
-                <div class="card bg-dark text-secondary">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">SAT</h5>
-                        <p class="card-text">A scheduling app.</p>
-                        <a href="#" class="btn btn-secondary align-self-end mt-auto disabled">Coming Soon</a>
-                    </div>
+                <div id="imageList" class="col-lg-1 col-sm-2 py-3">
+                    <ul id="projectList">
+                        <li>
+                            <img
+                                src="images/Terminal.png"
+                                class="active"
+                                width="64px"
+                                alt="Computer terminal"
+                                onmouseover="ImgMouseOver('#game')"
+                                onmouseout="ImgMouseOut('#game')"
+                                onclick="ImgClick('#game')"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="images/Cart.png"
+                                width="64px"
+                                alt="Shopping cart"
+                                onmouseover="ImgMouseOver('#store')"
+                                onmouseout="ImgMouseOut('#store')"
+                                onclick="ImgClick('#store')"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="images/Jigsaw.png"
+                                width="64px"
+                                alt="Jigsaw puzzle piece"
+                                onmouseover="ImgMouseOver('#api')"
+                                onmouseout="ImgMouseOut('#api')"
+                                onclick="ImgClick('#api')"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="images/React.png"
+                                width="64px"
+                                alt="Atomic symbol"
+                                onmouseover="ImgMouseOver('#react')"
+                                onmouseout="ImgMouseOut('#react')"
+                                onclick="ImgClick('#react')"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="images/Calendar.png"
+                                width="64px"
+                                alt="Calendar"
+                                onmouseover="ImgMouseOver('#schedule')"
+                                onmouseout="ImgMouseOut('#schedule')"
+                                onclick="ImgClick('#schedule')"
+                            />
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main>
