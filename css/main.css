@@ -405,16 +405,21 @@ main {
     background-position: top;
 }
 .colleagues ul li:nth-child(4) {
-    background-image: url('/images/Jace_Cockrell.png');
+    background-image: url('/images/Devon_Schmidt.JPEG');
     background-size: cover;
     background-position: top;
 }
 .colleagues ul li:nth-child(5) {
-    background-image: url('/images/Kyle_Gough.jpg');
+    background-image: url('/images/Jace_Cockrell.png');
     background-size: cover;
     background-position: top;
 }
 .colleagues ul li:nth-child(6) {
+    background-image: url('/images/Kyle_Gough.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.colleagues ul li:nth-child(7) {
     background-image: url('/images/Nicholas_Davolt.jpg');
     background-size: cover;
 }
